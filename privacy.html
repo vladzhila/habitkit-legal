@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — HabitKit</title>
+    <meta
+      name="description"
+      content="HabitKit Privacy Policy. We don't collect, store, or transmit any personal data. Everything stays on your device."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓</text></svg>"
+    />
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="HabitKit home">
+          <span class="logo-icon" aria-hidden="true">✓</span>
+          <span class="logo-text">HabitKit</span>
+        </a>
+        <nav class="header-nav" aria-label="Legal pages">
+          <a href="privacy.html" aria-current="page">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="legal-hero">
+        <h1>Privacy Policy</h1>
+        <p class="legal-meta">Effective date: February 9, 2026</p>
+      </section>
+
+      <article class="legal-content">
+        <div class="callout">
+          <p>
+            <strong>The short version:</strong> HabitKit does not collect,
+            transmit, or share any personal data. All your habit data is stored
+            locally on your device. We have no servers, no analytics, and no
+            tracking.
+          </p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+          This Privacy Policy describes how HabitKit ("the App"), developed by
+          Vlad Zhila ("we", "us", or "our"), handles information when you use
+          the App on your iOS device.
+        </p>
+        <p>
+          We are committed to protecting your privacy. HabitKit was designed
+          from the ground up to keep your personal data under your control.
+        </p>
+
+        <h2>2. Information We Do Not Collect</h2>
+        <p>
+          HabitKit does <strong>not</strong> collect, store, or transmit any of
+          the following:
+        </p>
+        <ul>
+          <li>
+            Personal identification information (name, email, phone number)
+          </li>
+          <li>Location data</li>
+          <li>Device identifiers or advertising IDs</li>
+          <li>Usage analytics or behavioral data</li>
+          <li>
+            Health or fitness data beyond what you manually enter as habits
+          </li>
+          <li>Contacts, photos, or other device data</li>
+        </ul>
+
+        <h2>3. Data Storage</h2>
+        <p>
+          All data you create in HabitKit — your habits, completion records,
+          preferences, and settings — is stored
+          <strong>exclusively on your device</strong> using Apple's SwiftData
+          framework and UserDefaults.
+        </p>
+        <p>
+          If you use the Home Screen Widget, a copy of your habit data is shared
+          between the main app and the widget extension through an Apple App
+          Group container. This data never leaves your device.
+        </p>
+
+        <h2>4. Notifications</h2>
+        <p>
+          If you enable habit reminders, HabitKit uses Apple's local
+          notification system (UNUserNotificationCenter) to schedule
+          notifications on your device. These notifications are processed
+          entirely on-device and are not routed through any external server.
+        </p>
+
+        <h2>5. In-App Purchases</h2>
+        <p>
+          HabitKit offers optional in-app purchases (subscriptions and a
+          lifetime unlock) through Apple's StoreKit framework. All payment
+          processing is handled entirely by Apple. We do not receive, store, or
+          have access to your payment information, Apple ID, or transaction
+          details.
+        </p>
+        <p>
+          For information about how Apple handles your purchase data, please
+          refer to
+          <a
+            href="https://www.apple.com/legal/privacy/"
+            target="_blank"
+            rel="noopener"
+            >Apple's Privacy Policy</a
+          >.
+        </p>
+
+        <h2>6. Export & Import</h2>
+        <p>
+          HabitKit includes an optional JSON export/import feature. When you
+          export your data, a file is generated locally on your device. Where
+          you send or store that file is entirely under your control. We do not
+          receive a copy of your exported data.
+        </p>
+
+        <h2>7. Third-Party Services</h2>
+        <p>
+          HabitKit does <strong>not</strong> integrate with any third-party
+          analytics, advertising, crash reporting, or tracking services. The App
+          contains no third-party SDKs that collect user data.
+        </p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>
+          HabitKit does not knowingly collect information from children under
+          the age of 13. Since we do not collect any personal data from any
+          user, the App is safe for users of all ages.
+        </p>
+
+        <h2>9. Data Deletion</h2>
+        <p>
+          Since all data is stored locally on your device, you can delete all
+          HabitKit data at any time by:
+        </p>
+        <ul>
+          <li>Deleting individual habits within the App</li>
+          <li>
+            Uninstalling the App from your device (this removes all associated
+            data)
+          </li>
+        </ul>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. If we make
+          material changes, the updated policy will be posted on this page with
+          a revised effective date. Your continued use of the App after changes
+          are posted constitutes acceptance of the updated policy.
+        </p>
+
+        <h2>11. Contact</h2>
+        <p>
+          If you have any questions about this Privacy Policy or HabitKit's
+          privacy practices, please contact us at:
+        </p>
+        <p><a href="mailto:vlzhila@gmail.com">vlzhila@gmail.com</a></p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Vlad Zhila. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const header = document.getElementById('site-header')
+      window.addEventListener(
+        'scroll',
+        () => {
+          header.classList.toggle('scrolled', window.scrollY > 8)
+        },
+        { passive: true }
+      )
+    </script>
+  </body>
+</html>

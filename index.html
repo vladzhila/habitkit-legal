@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HabitKit — Legal</title>
+  <meta name="description" content="Privacy Policy and Terms of Service for HabitKit, the habit tracking app for iOS.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓</text></svg>">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="HabitKit home">
+        <span class="logo-icon" aria-hidden="true">✓</span>
+        <span class="logo-text">HabitKit</span>
+      </a>
+      <nav class="header-nav" aria-label="Legal pages">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-icon" aria-hidden="true">✓</div>
+      <h1>Legal Information</h1>
+      <p>We believe in transparency. HabitKit keeps your data private, local, and under your control.</p>
+    </section>
+
+    <div class="card-grid">
+      <a href="privacy.html" class="card-link">
+        <h2>Privacy Policy</h2>
+        <p>How we handle your data — spoiler: we don't collect any. Everything stays on your device.</p>
+        <span class="card-arrow">Read more <span aria-hidden="true">&rarr;</span></span>
+      </a>
+      <a href="terms.html" class="card-link">
+        <h2>Terms of Service</h2>
+        <p>The terms governing your use of HabitKit, including subscriptions and in-app purchases.</p>
+        <span class="card-arrow">Read more <span aria-hidden="true">&rarr;</span></span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Vlad Zhila. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 8);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
